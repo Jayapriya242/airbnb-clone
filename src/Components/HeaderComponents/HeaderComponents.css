@@ -1,0 +1,94 @@
+
+body {
+  margin: 0%;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display:flex;
+  position:relative;
+  align-items: center;
+  justify-content: space-between;
+  top:0px;
+}
+
+.logo img {
+  height: 100px;
+  padding-right: 55vh;
+}
+.nav-buttons{
+  padding-right: 40vh;
+}
+
+.nav-buttons button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 40px;
+  
+}
+.nav-buttons2{
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 40px;
+
+}
+
+.nav-buttons button:hover {
+  /* text-decoration:black; */
+  font: bolder;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 5px 10px;
+  border-radius: 40px;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.menu-icon .line {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+}
+
+.profile-button {
+  border-radius: 50%;
+  padding: 5px;
+}
+/* span.custom-span {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  margin: 0 10px;
+} */
+
+

@@ -53,12 +53,13 @@ const Carousel = ({ images}) => {
 
 const PastCarousel2= () => {
   const carouselsData = [
-    [image1, image2, image3,image4,image5], 
-    [image6, image9, image10],
-    [image7, image11, image5],
+    [image5, image2, image3,image4,image5], 
+    [image14, image9, image10],
+    [image9, image11, image5],
   ];
 
   return (
+    
     <div className="multiple-carousel">
       {carouselsData.map((carouselsData, index) => (
         <Carousel key={index} images={carouselsData} />

@@ -34,12 +34,13 @@
 import React, { useState } from 'react';
 import Header from './Components/HeaderComponents/HeaderComponents';
 import ButtonComponents from './Components/ButtonComponents/ButtonComponents';
-import Image1 from './Components/FooterComponents/Carousel1';
-import Image2 from './Components/FooterComponents/Carousel2';
-import Image3 from './Components/FooterComponents/Carousel3';
+import Image1 from './Components/CaroselComponent/Carousel1';
+import Image2 from './Components/CaroselComponent/Carousel2';
+import Image3 from './Components/CaroselComponent/Carousel3';
 import IconScroller from './Components/IconComponents/IconComponents';
-import MultipleCarousel1 from './Components/FooterComponents/PastCarousel1';
-import PastCarousel2 from './Components/FooterComponents/PastCarousel2';
+import MultipleCarousel1 from './Components/CaroselComponent/PastCarousel1';
+import PastCarousel2 from './Components/CaroselComponent/PastCarousel2';
+import Footer from './Components/FooterComponent/FooterComponent';
 
 const App = () => {
   const [searchParams, setSearchParams] = useState(null);
@@ -56,10 +57,20 @@ const App = () => {
       <Image1 />
       <Image2 />
       <Image3 />
-      {searchParams && (
-        <MultipleCarousel1 where={searchParams.where} />
-      )}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div className="section-header">
+        <h1>Past Experience</h1>
+      </div>
+      <MultipleCarousel1/>
       <PastCarousel2 />
+      <Footer/>
     </div>
   );
 };

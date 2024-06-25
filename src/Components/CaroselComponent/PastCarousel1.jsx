@@ -55,10 +55,10 @@ const Carousel = ({ images}) => {
 
 const MultipleCarousel1= () => {
   const carouselsData = [
-    [image1, image2, image3,image4,image5], 
-    [image6, image9, image10],
-    [image7, image11, image5],
-    [image8, image10, image9] 
+    [image4, image2, image3,image4,image5], 
+    [image3, image9, image10],
+    [image6, image11, image5],
+    [image9, image10, image9] 
   ];
 
   return (

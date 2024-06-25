@@ -30,8 +30,7 @@ const cityData = [
   "Faridabad",
   "Meerut"
 ];
-
-const ButtonComponents = () => {
+const ButtonComponents = ({onSearch}) => {
   const [where, setWhere] = useState('');
   const [checkIn, setCheckIn] = useState(null);
   const [checkOut, setCheckOut] = useState(null);
@@ -44,8 +43,16 @@ const ButtonComponents = () => {
   
   const whoRef = useRef(null);
 
+  // const handleSearch = () => {
+  //   console.log({
+  //     where,
+  //     checkIn: checkIn ? checkIn.toISOString().split('T')[0] : '',
+  //     checkOut: checkOut ? checkOut.toISOString().split('T')[0] : '',
+  //     who: { adults, children, infants, pets },
+  //   });
+  // };
   const handleSearch = () => {
-    console.log({
+    onSearch({
       where,
       checkIn: checkIn ? checkIn.toISOString().split('T')[0] : '',
       checkOut: checkOut ? checkOut.toISOString().split('T')[0] : '',
